@@ -9,10 +9,10 @@ app = Flask(__name__)
 ask = Ask(app, "/career_finder")
 
 def get_company_names():
-    sess = request.Session()
+    sess = requests.Session()
     url = "http://service.dice.com/api/rest/jobsearch/v1/simple.json?state=arizona"
     html = sess.get(url)
-    data= json.loads(html.content.decode('utf-8'))
+    data = json.loads(html.content.decode('utf-8'))
     # companies = [unidecode.unidecode(listing['data']['title']) for listing in data['data']['children']]
     # companies = '... '.join([i for i in companies])
     return data
