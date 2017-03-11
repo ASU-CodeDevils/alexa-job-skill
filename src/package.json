@@ -1,7 +1,7 @@
 {
-  "name": "swhacks",
+  "name": "JobPatrol",
   "version": "0.1",
-  "description": "Job Query Skill",
+  "description": "Job Searching and Watching Skill",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,7 @@
     "search",
     "resume"
   ],
-  "author": "stryakr",
+  "author": "Code9",
   "license": "Apache-2.0",
   "dependencies": {
     "alexa-sdk": "^1.0.7"
