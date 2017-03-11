@@ -34,6 +34,12 @@ tell me which companies are currently hiring in {state}
 tell me which companies are currently hiring in {city}
 tell me which companies are currently hiring in {state} for {skill}
 tell me which companies are currently hiring in {city} for {skill}
+can you tell me which companies are currently hiring
+can you tell me which companies are currently hiring in {state}
+can you tell me which companies are currently hiring in {city}
+can you tell me which companies are currently hiring in {state} for {skill}
+can you tell me which companies are currently hiring in {city} for {skill}
+
 
 
 can you find me a job that uses {skill}
@@ -43,6 +49,16 @@ tell me companies that are currently hiring for {skill} in {state}
 tell me companies that are currently hiring for {skill} in {city}
 tell me companies in {state} that are currently hiring for {skill}
 tell me companies in {city} that are currently hiring for {skill}
+can you tell me companies that are currently hiring for {skill}
+can you tell me companies that are currently hiring for {skill} in {state}
+can you tell me companies that are currently hiring for {skill} in {city}
+can you tell me companies in {state} that are currently hiring for {skill}
+can you tell me companies in {city} that are currently hiring for {skill}
+list the companies that are currently hiring for {skill}
+list the companies that are currently hiring for {skill} in {state}
+list the companies that are currently hiring for {skill} in {city}
+list the companies in {state} that are currently hiring for {skill}
+list the companies in {city} that are currently hiring for {skill}
 where can I work with my skill in {skill}
 where can I work in {state} with my skill in {skill}
 where can I work in {city} with my skill in {skill}
