@@ -1,0 +1,21 @@
+{
+  "name": "swhacks",
+  "version": "0.1",
+  "description": "Job Query Skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "jobs",
+    "search",
+    "resume"
+  ],
+  "author": "stryakr",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "alexa-sdk": "^1.0.7"
+  }
+}
