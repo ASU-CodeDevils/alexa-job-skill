@@ -1,0 +1,49 @@
+YesIntent yes
+YesIntent sure
+YesIntent yeah
+YesIntent yeee
+YesIntent yup
+YesIntent yay
+
+NoIntent no
+NoIntent go away
+NoIntent nope
+NoIntent nah
+NoIntent no thank you
+NoIntent never
+NoIntent nay
+
+what jobs are available in {state}
+what jobs are available in {state} for {skill}
+what jobs are open in {state}
+what jobs are open in {state} for {skill}
+who is hiring in {state}
+who is hiring in {state} for {skill}
+where can I get a job in {state}
+where can I get a job in {state} for {skill}
+
+
+who is hiring in {city}
+what jobs are available in {city}
+what jobs are open in {state}
+where can I get a job in {city}
+
+who is hiring right now
+tell me which companies are currently hiring
+tell me which companies are currently hiring in {state}
+tell me which companies are currently hiring in {city}
+tell me which companies are currently hiring in {state} for {skill}
+tell me which companies are currently hiring in {city} for {skill}
+
+
+can you find me a job that uses {skill}
+can you find me a {skill} job
+tell me companies that are currently hiring for {skill}
+tell me companies that are currently hiring for {skill} in {state}
+tell me companies that are currently hiring for {skill} in {city}
+tell me companies in {state} that are currently hiring for {skill}
+tell me companies in {city} that are currently hiring for {skill}
+where can I work with my skill in {skill}
+where can I work in {state} with my skill in {skill}
+where can I work in {city} with my skill in {skill}
+where can I get a job in {skill}
