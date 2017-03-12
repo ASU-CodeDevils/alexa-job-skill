@@ -40,7 +40,8 @@ exports.handler = function(event, context, callback) {
 var newSessionHandlers = {
     'NewSessionIntent': function () {
         this.handler.state = states.DEFAULT;
-        this.emit(':ask', 'Welcome to Job Dog, What state would you like to look for a job?')
+        this.emit(':ask', 'Welcome to Job Dog. ' +
+        'Is there a specific state you want to work in?')
         // this.emitWithState(':ask', 'Welcome to Job Dog, What state would you like to look for a job?', true);
     },
     'WithStateIntent': function () {
@@ -60,10 +61,9 @@ var newSessionHandlers = {
     },
     'GetStateIntent' : function() {
           var slotValue = this.event.request.intent.slots.state.value;
-          this.emit(':ask', 'so you want to work in '+ slotValue);
+          this.emit(':ask', 'Alight, so you want to work in '+ slotValue);
     }
   };
-
 var defaultHandlers = Alexa.CreateStateHandler(states.DEFAULT, {
       'NoIntent' : function() {
         this.emit(':ask', 'Would you like me to perform the search now?' );
@@ -85,10 +85,10 @@ var defaultHandlers = Alexa.CreateStateHandler(states.DEFAULT, {
           this.emit(':ask ', 'Please try another command');
       },
       'GetStateIntent' : function() {
-            var slotValue = this.event.request.intent.slots.state.value;
-            this.handler.state = states.QUERY;
-            this.attributes["state"] = slotValue;
-            this.emit(':ask', 'so you want to work in Nantuket');
+          this.handler.state = states.QUERY;
+          var slotValue = this.event.request.intent.slots.state.value;
+          this.attributes["state"] = slotValue;
+          this.emit(':ask', 'so you want to work in ' + slotValue);
       }
   });
 
@@ -101,7 +101,9 @@ var defaultHandlers = Alexa.CreateStateHandler(states.DEFAULT, {
           var state = this.attributes["state"];
           getAPI(state, function(result) {
             var count = result.count;
-            that.emit(':tell', "the number of responses for " + state + " was " + count);
+            var job = result.resultItemList[1];
+            var firstJob = "the first entry is for " + job.jobTitle + "Working for " + job.company + ". The Job is based in " + job.location;
+            that.emit(':tell', "There are currently " + count + " job openings in" + state +'. ' + firstJob);
           })
       },
       'DefaultIntent' : function() {

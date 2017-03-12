@@ -1,4 +1,5 @@
 GetStateIntent I want to work in {state}
+GetStateIntent {state}
 LaunchRequest Open Job Dog
 SessionEndRequest Goodbye Job Dog
 GetStateIntent what jobs are available in {state}
@@ -96,3 +97,4 @@ NoIntent No
 NoIntent Nope
 NoIntent nah
 NoIntent Naw
+HardCode Test
