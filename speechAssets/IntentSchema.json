@@ -1,11 +1,52 @@
 {
     "intents": [
-        {"intent": "AMAZON.YesIntent"},
-        {"intent": "AMAZON.NoIntent"},
-    	{"intent": "GetStateIntent", "slots": [{"name": "state","type": "AMAZON.US_STATE"}, {"name": 												"skill","type": "LIST_OF_SKILLS"}]},
-     	{"intent": "LaunchRequest"},
-      	{"intent": "GetCityIntent", "slots": [{"name": "city", "type": "AMAZON.US_CITY"}, {"name": 												   "skill","type": "LIST_OF_SKILLS"}]},
-      	{"intent": "GetDefaultIntent"},
-      	{"intent": "GetSkillIntent", "slots": [{"name": "skill", "type": "LIST_OF_SKILLS"}]}
+        {
+          "intent" : "AMAZON.YesIntent"
+        },
+        {
+          "intent" : "AMAZON.NoIntent"
+        },
+      	{
+          "intent" : "GetStateIntent",
+          "slots" : [
+            {
+              "name" : "state",
+              "type": "AMAZON.US_STATE"
+            },
+            {
+              "name" : "skill",
+              "type": "LIST_OF_SKILLS"
+              }
+            ]
+        },
+      	{
+          "intent" : "LaunchRequest"
+        },
+      	{
+          "intent" : "GetCityIntent",
+          "slots" : [
+            {
+              "name" : "city",
+              "type" : "AMAZON.US_CITY"
+            },
+            {
+              "name" : "skill",
+              "type": "LIST_OF_SKILLS"
+            }
+          ]
+        },
+      	{
+          "intent" : "GetDefaultIntent"
+        },
+      	{
+          "intent" : "GetSkillIntent",
+          "slots" :
+          [
+            {
+              "name" : "skill",
+              "type": "LIST_OF_SKILLS"
+            }
+          ]
+        }
    ]
 }
