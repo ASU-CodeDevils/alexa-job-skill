@@ -1,11 +1,88 @@
 {
-    "intents": [
-        {"intent": "AMAZON.YesIntent"},
-        {"intent": "AMAZON.NoIntent"},
-    	{"intent": "GetStateIntent", "slots": [{"name": "state","type": "AMAZON.US_STATE"}, {"name": 												"skill","type": "LIST_OF_SKILLS"}]},
-     	{"intent": "LaunchRequest"},
-      	{"intent": "GetCityIntent", "slots": [{"name": "city", "type": "AMAZON.US_CITY"}, {"name": 												   "skill","type": "LIST_OF_SKILLS"}]},
-      	{"intent": "GetDefaultIntent"},
-      	{"intent": "GetSkillIntent", "slots": [{"name": "skill", "type": "LIST_OF_SKILLS"}]}
-   ]
+  "intents": [
+    {
+      "intent" : "AMAZON.NoIntent"
+    },
+    {
+      "intent" : "AMAZON.YesIntent"
+    },
+    {
+      "intent": "WithStateIntent"
+    },
+    {
+      "intent" : "WithCityIntent"
+    },
+    {
+      "intent" : "LaunchRequest"
+    },
+    {
+      "intent" : "WithSkillIntent"
+    },
+    {
+      "intent" : "NewSessionIntent"
+    },
+    {
+      "intent" : "Unhandled"
+    },
+    {
+      "intent" : "PizzaBox"
+    },
+    {
+      "intent" : "GetStateIntent",
+      "slots" : [
+        {
+          "name" : "state",
+          "type" : "AMAZON.US_STATE"
+        },
+        {
+          "name" : "city",
+          "type" : "AMAZON.NUMBER"
+        },
+        {
+          "name" : "skill",
+          "type" : "LIST_OF_SKILL"
+        }
+      ]
+    },
+    {
+      "intent" : "GetCityIntent",
+      "slots"  : [
+        {
+          "name" : "state",
+          "type" : "AMAZON.US_STATE"
+        },
+        {
+          "name" : "city",
+          "type" : "AMAZON.NUMBER"
+        },
+        {
+          "name" : "skill",
+          "type" : "LIST_OF_SKILL"
+        }
+      ]
+    },
+    {
+      "intent" : "GetSkillIntent",
+      "slots"  : [
+        {
+          "name" : "state",
+          "type" : "AMAZON.US_STATE"
+        },
+        {
+          "name" : "city",
+          "type" : "AMAZON.NUMBER"
+        },
+        {
+          "name" : "skill",
+          "type" : "LIST_OF_SKILL"
+        }
+      ]
+    },
+    {
+      "intent" : "DefaultIntent"
+    },
+    {
+      "intent" : "SessionEndRequest"
+    }
+  ]
 }

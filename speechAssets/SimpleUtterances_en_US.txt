@@ -7,11 +7,11 @@ GetStateIntent who is hiring in {state} for {skill}
 GetStateIntent where can I get a job in {state}
 GetStateIntent where can I get a job in {state} for {skill}
 GetStateIntent what jobs are open in {state}
-GetDefaultIntent who is hiring right now
-GetDefaultIntent tell me which companies are currently hiring
+DefaultIntent who is hiring right now
+DefaultIntent tell me which companies are currently hiring
 GetStateIntent tell me which companies are currently hiring in {state}
 GetStateIntent tell me which companies are currently hiring in {state} for {skill}
-GetDefaultIntent can you tell me which companies are currently hiring
+DefaultIntent can you tell me which companies are currently hiring
 GetStateIntent can you tell me which companies are currently hiring in {state}
 GetStateIntent can you tell me which companies are currently hiring in {state} for {skill}
 GetStateIntent tell me companies in {state} that are currently hiring for {skill}
@@ -82,3 +82,5 @@ GetStateIntent I currently live in {state}
 GetCityIntent I currently live in {city}
 GetCityIntent Around {city}
 GetStateIntent Around {state}
+
+LaunchRequest Open Job Dog

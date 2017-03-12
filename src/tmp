@@ -1,0 +1,53 @@
+var newSessionHandlers = {
+  'LaunchRequest': function () {
+      this.emit(':ask', 'Welcome to Job Dog, What state would you like to look for a job?');
+  },
+  // 'NewSessionIntent': function () {
+  //     this.emit(':ask', 'Welcome to Job Dog, What state would you like to look for a job?');
+  //     //this.hander.state = states._DEFAULT;
+  // },
+  'Unhandled' : function () {
+      this.emit(':ask ', 'Please try another command');
+  },
+  'PizzaBox' : function () {
+      this.emit(':tell', 'You are the new Session Handler state');
+  }
+};
+//
+// var defaultHandlers = Alexa.CreateStateHandler(states._DEFAULT, {
+//     'YesIntent' : function() {
+//       this.emit(':ask', 'was there a zip code that you wanted to work with?');
+//     },
+//     'NoIntent' : function() {
+//       this.emit(':ask', 'Would you like me to perform the search now?' );
+//       this.handler.state = states._QUERYMODE;
+//     },
+//     'WithStateIntent': function () {
+//         this.emit(':ask', 'Great, do you want to add a zipcode?');
+//     },
+//     'WithCityIntent': function () {
+//         this.emit(':ask', 'is there a job title you want to use?');
+//     },
+//     'SessionEndRequest' : function () {
+//         this.emit(':tell', 'Thanks for using Job Finder');
+//     },
+//       'Unhandled' : function () {
+//         this.emit(':ask ', 'Please try another command');
+//     },
+//     'PizzaBox' : function () {
+//         this.emit(':tell', 'Ren is a bully and you are in the default state. ');
+//     },
+//     'GetStateIntent' : function() {
+//           var slotValue = this.event.request.intent.slots.state.value;
+//           this.emit(':ask', 'so you want to work in '+ slotValue);
+//     }
+// });
+//
+// var queryHandlers = Alexa.CreateStateHandler(states._QUERYMODE, {
+//     'NoIntent' : function() {
+//       this.emit(':ask', 'Was there something else you wanted to add to the search parameter?');
+//     },
+//     'DefaultIntent' : function() {
+//       this.emit(':tell', 'Made it to Query State');
+//     }
+// });
