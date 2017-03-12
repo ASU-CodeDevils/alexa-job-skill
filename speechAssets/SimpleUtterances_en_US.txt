@@ -1,3 +1,7 @@
+GetStateIntent I want to work in {state}
+GetStateIntent {state}
+LaunchRequest Open Job Dog
+SessionEndRequest Goodbye Job Dog
 GetStateIntent what jobs are available in {state}
 GetStateIntent what jobs are available in {state} for {skill}
 GetStateIntent what jobs are open in {state}
@@ -7,8 +11,12 @@ GetStateIntent who is hiring in {state} for {skill}
 GetStateIntent where can I get a job in {state}
 GetStateIntent where can I get a job in {state} for {skill}
 GetStateIntent what jobs are open in {state}
+DefaultIntent who is hiring right now
+DefaultIntent tell me which companies are currently hiring
 GetStateIntent tell me which companies are currently hiring in {state}
 GetStateIntent tell me which companies are currently hiring in {state} for {skill}
+DefaultIntent can you tell me which companies are currently hiring
+
 GetStateIntent can you tell me which companies are currently hiring in {state}
 GetStateIntent can you tell me which companies are currently hiring in {state} for {skill}
 GetStateIntent tell me companies in {state} that are currently hiring for {skill}
@@ -85,3 +93,15 @@ GetStateIntent I currently live in {state}
 GetCityIntent I currently live in {city}
 GetCityIntent Around {city}
 GetStateIntent Around {state}
+
+LaunchRequest Open Job Dog
+YesIntent Yeah
+YesIntent Yes
+YesIntent Yup
+YesIntent Sure
+
+NoIntent No
+NoIntent Nope
+NoIntent nah
+NoIntent Naw
+HardCode Test

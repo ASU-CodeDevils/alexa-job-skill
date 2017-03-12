@@ -1,0 +1,12 @@
+  http.get(baseUrl, function(res){
+        var body = '';
+        res.on('data', function(data){
+            body += data;
+        });
+        res.on('end', function(){
+          var result = JSON.parse(body);
+          this.emit(':tell', 'There are ' + result.count + ' search results');
+        });
+      }).on('error', function(e){
+        console.log('Error: ' + e);
+      });
