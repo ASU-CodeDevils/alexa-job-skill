@@ -1,10 +1,10 @@
 {
   "intents": [
     {
-      "intent" : "AMAZON.NoIntent"
+      "intent" : "NoIntent"
     },
     {
-      "intent" : "AMAZON.YesIntent"
+      "intent" : "YesIntent"
     },
     {
       "intent": "WithStateIntent"

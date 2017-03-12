@@ -1,3 +1,6 @@
+GetStateIntent I want to work in {state}
+LaunchRequest Open Job Dog
+SessionEndRequest Goodbye Job Dog
 GetStateIntent what jobs are available in {state}
 GetStateIntent what jobs are available in {state} for {skill}
 GetStateIntent what jobs are open in {state}
@@ -84,3 +87,12 @@ GetCityIntent Around {city}
 GetStateIntent Around {state}
 
 LaunchRequest Open Job Dog
+YesIntent Yeah
+YesIntent Yes
+YesIntent Yup
+YesIntent Sure
+
+NoIntent No
+NoIntent Nope
+NoIntent nah
+NoIntent Naw

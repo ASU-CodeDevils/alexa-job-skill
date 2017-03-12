@@ -16,6 +16,7 @@
   "author": "Code9",
   "license": "Apache-2.0",
   "dependencies": {
-    "alexa-sdk": "^1.0.7" 
-    }
+    "alexa-sdk": "^1.0.7",
+    "request": "^2.81.0"
+  }
 }
