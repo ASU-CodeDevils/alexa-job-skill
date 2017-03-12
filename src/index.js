@@ -10,9 +10,9 @@ var states = {
     RESULT:  'RESULT MODE'    // Build the results for the user and reply TODO: Find a heuristics to filter data.
 
 };
-var getAPI = function(callback) {
+var getAPI = function(state, callback) {
     console.log("IN HARDCODE");
-    http.get(baseUrl + "state=Alaska", function(res){
+    http.get(baseUrl + "state=" + state, function(res){
       console.log("IN http.get");
           var body = '';
           res.on('data', function(data){
@@ -38,13 +38,6 @@ exports.handler = function(event, context, callback) {
 };
 
 var newSessionHandlers = {
-    'HardCode' : function() {
-        var that = this;
-        getAPI(function(result) {
-          var count = result.count;
-          that.emit(':tell', "the number of responses was " + count);
-        })
-    },
     'NewSessionIntent': function () {
         this.handler.state = states.DEFAULT;
         this.emit(':ask', 'Welcome to Job Dog, What state would you like to look for a job?')
@@ -104,10 +97,12 @@ var defaultHandlers = Alexa.CreateStateHandler(states.DEFAULT, {
         this.emit(':ask', 'Was there something else you wanted to add to the search parameter?');
       },
       'YesIntent' : function() {
-        request(baseUrl + "state=" + this.attributes["state"], function(body) {
-          var json = JSON.parse(body);
-          this.emit(':tell','The number of results are ' + json.count );
-        })
+          var that = this;
+          var state = this.attributes["state"];
+          getAPI(state, function(result) {
+            var count = result.count;
+            that.emit(':tell', "the number of responses for " + state + " was " + count);
+          })
       },
       'DefaultIntent' : function() {
         this.emit(':tell', 'Made it to Query State');
