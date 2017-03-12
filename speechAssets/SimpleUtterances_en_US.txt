@@ -16,6 +16,7 @@ DefaultIntent tell me which companies are currently hiring
 GetStateIntent tell me which companies are currently hiring in {state}
 GetStateIntent tell me which companies are currently hiring in {state} for {skill}
 DefaultIntent can you tell me which companies are currently hiring
+
 GetStateIntent can you tell me which companies are currently hiring in {state}
 GetStateIntent can you tell me which companies are currently hiring in {state} for {skill}
 GetStateIntent tell me companies in {state} that are currently hiring for {skill}
@@ -27,6 +28,14 @@ GetStateIntent what companies are hiring in {state}
 GetStateIntent which companies are hiring in {state}
 GetStateIntent what companies are hiring in {state} for {skill}
 GetStateIntent which companies are hiring in {state} for {skill}
+GetStateIntent tell me companies that are currently hiring for {skill} in {state}
+GetStateIntent can you tell me companies that are currently hiring for {skill} in {state}
+GetStateIntent list the companies that are currently hiring for {skill} in {state}
+
+GetDefaultIntent who is hiring right now
+GetDefaultIntent tell me which companies are currently hiring
+GetDefaultIntent can you tell me which companies are currently hiring
+
 
 GetCityIntent what companies are hiring in {city}
 GetCityIntent which companies are hiring in {city}
@@ -49,17 +58,15 @@ GetCityIntent list the companies in {city} that are currently hiring for {skill}
 GetSkillIntent can you find me a job that uses {skill}
 GetSkillIntent can you find me a {skill} job
 GetSkillIntent tell me companies that are currently hiring for {skill}
-GetStateIntent tell me companies that are currently hiring for {skill} in {state}
-GetCityIntent tell me companies that are currently hiring for {skill} in {city}
 GetSkillIntent can you tell me companies that are currently hiring for {skill}
-GetStateIntent can you tell me companies that are currently hiring for {skill} in {state}
-GetCityIntent can you tell me companies that are currently hiring for {skill} in {city}
 GetSkillIntent list the companies that are currently hiring for {skill}
-GetStateIntent list the companies that are currently hiring for {skill} in {state}
-GetCityIntent list the companies that are currently hiring for {skill} in {city}
 GetSkillIntent where can I work with my skill in {skill}
 GetSkillIntent where can I get a job in {skill}
 GetSkillIntent I want to work in {skill}
+GetCityIntent tell me companies that are currently hiring for {skill} in {city}
+GetCityIntent list the companies that are currently hiring for {skill} in {city}
+GetCityIntent can you tell me companies that are currently hiring for {skill} in {city}
+
 
 GetCityIntent My zip code is {city}
 GetStateIntent My state is {state}
