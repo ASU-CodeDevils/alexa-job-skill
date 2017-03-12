@@ -62,7 +62,7 @@ var defaultHandlers = Alexa.CreateStateHandler(states.DEFAULT, {
       'SessionEndRequest' : function () {
           this.emit(':tell', 'Thanks for using Job Finder');
       },
-      'AMAZON.YesIntent' : function() {
+        'YesIntent' : function() {
           this.handler.state = states.QUERY;
           this.emit(':ask', 'Awesome, let me run that search for you');
       },
@@ -71,30 +71,31 @@ var defaultHandlers = Alexa.CreateStateHandler(states.DEFAULT, {
       },
       'GetStateIntent' : function() {
             var slotValue = this.event.request.intent.slots.state.value;
+            this.handler.state = states.QUERY;
             this.emit(':ask', 'so you want to work in Nantuket');
       }
   });
 
   var queryHandlers = Alexa.CreateStateHandler(states.QUERY, {
-      'AMAZON.NoIntent' : function() {
+      'NoIntent' : function() {
         this.emit(':ask', 'Was there something else you wanted to add to the search parameter?');
       },
-      'AMAZON.YesIntent' : function() {
+      'YesIntent' : function() {
           http.get(baseUrl, function(res){
-              var body = '';
-              res.on('data', function(data){
+            var body = '';
+
+            res.on('data', function(data){
               body += data;
-              });
-              res.on('end', function(){
-              var result = JSON.parse(body);
-              this.emit
             });
-       }).on('error', function(e){
-           console.log('Error: ' + e);
-       });
-};
-      }
+            res.on('end', function(){
+              var result = JSON.parse(body);
+              this.emit(':tell', 'there are ' + result.count + ' number of results');
+            });
+          }).on('error', function(e){
+            console.log('Error: ' + e);
+          });
+        },
       'DefaultIntent' : function() {
         this.emit(':tell', 'Made it to Query State');
       }
-  });
+});
