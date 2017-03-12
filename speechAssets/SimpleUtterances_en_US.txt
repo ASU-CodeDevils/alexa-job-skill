@@ -1,65 +1,84 @@
-YesIntent yes
-YesIntent sure
-YesIntent yeah
-YesIntent yeee
-YesIntent yup
-YesIntent yay
+GetStateIntent what jobs are available in {state}
+GetStateIntent what jobs are available in {state} for {skill}
+GetStateIntent what jobs are open in {state}
+GetStateIntent what jobs are open in {state} for {skill}
+GetStateIntent who is hiring in {state}
+GetStateIntent who is hiring in {state} for {skill}
+GetStateIntent where can I get a job in {state}
+GetStateIntent where can I get a job in {state} for {skill}
+GetStateIntent what jobs are open in {state}
+GetDefaultIntent who is hiring right now
+GetDefaultIntent tell me which companies are currently hiring
+GetStateIntent tell me which companies are currently hiring in {state}
+GetStateIntent tell me which companies are currently hiring in {state} for {skill}
+GetDefaultIntent can you tell me which companies are currently hiring
+GetStateIntent can you tell me which companies are currently hiring in {state}
+GetStateIntent can you tell me which companies are currently hiring in {state} for {skill}
+GetStateIntent tell me companies in {state} that are currently hiring for {skill}
+GetStateIntent can you tell me companies in {state} that are currently hiring for {skill}
+GetStateIntent list the companies in {state} that are currently hiring for {skill}
+GetStateIntent where can I work in {state} with my skill in {skill}
+GetStateIntent I want to work in {state}
+GetStateIntent what companies are hiring in {state}
+GetStateIntent which companies are hiring in {state}
+GetStateIntent what companies are hiring in {state} for {skill}
+GetStateIntent which companies are hiring in {state} for {skill}
 
-NoIntent no
-NoIntent go away
-NoIntent nope
-NoIntent nah
-NoIntent no thank you
-NoIntent never
-NoIntent nay
+GetCityIntent what companies are hiring in {city}
+GetCityIntent which companies are hiring in {city}
+GetCityIntent what companies are hiring in {city} for {skill}
+GetCityIntent which companies are hiring in {city} for {skill}
+GetCityIntent I want to work in {city}
+GetCityIntent where can I work in {city} with my skill in {skill}
+GetCityIntent who is hiring in {city}
+GetCityIntent what jobs are available in {city}
+GetCityIntent where can I get a job in {city}
+GetCityIntent where can I get a job in {city} for {skill}
+GetCityIntent tell me which companies are currently hiring in {city}
+GetCityIntent tell me which companies are currently hiring in {city} for {skill}
+GetCityIntent can you tell me which companies are currently hiring in {city}
+GetCityIntent can you tell me which companies are currently hiring in {city} for {skill}
+GetCityIntent tell me companies in {city} that are currently hiring for {skill}
+GetCityIntent can you tell me companies in {city} that are currently hiring for {skill}
+GetCityIntent list the companies in {city} that are currently hiring for {skill}
 
-what jobs are available in {state}
-what jobs are available in {state} for {skill}
-what jobs are open in {state}
-what jobs are open in {state} for {skill}
-who is hiring in {state}
-who is hiring in {state} for {skill}
-where can I get a job in {state}
-where can I get a job in {state} for {skill}
+GetSkillIntent can you find me a job that uses {skill}
+GetSkillIntent can you find me a {skill} job
+GetSkillIntent tell me companies that are currently hiring for {skill}
+GetStateIntent tell me companies that are currently hiring for {skill} in {state}
+GetCityIntent tell me companies that are currently hiring for {skill} in {city}
+GetSkillIntent can you tell me companies that are currently hiring for {skill}
+GetStateIntent can you tell me companies that are currently hiring for {skill} in {state}
+GetCityIntent can you tell me companies that are currently hiring for {skill} in {city}
+GetSkillIntent list the companies that are currently hiring for {skill}
+GetStateIntent list the companies that are currently hiring for {skill} in {state}
+GetCityIntent list the companies that are currently hiring for {skill} in {city}
+GetSkillIntent where can I work with my skill in {skill}
+GetSkillIntent where can I get a job in {skill}
+GetSkillIntent I want to work in {skill}
 
-
-who is hiring in {city}
-what jobs are available in {city}
-what jobs are open in {state}
-where can I get a job in {city}
-
-who is hiring right now
-tell me which companies are currently hiring
-tell me which companies are currently hiring in {state}
-tell me which companies are currently hiring in {city}
-tell me which companies are currently hiring in {state} for {skill}
-tell me which companies are currently hiring in {city} for {skill}
-can you tell me which companies are currently hiring
-can you tell me which companies are currently hiring in {state}
-can you tell me which companies are currently hiring in {city}
-can you tell me which companies are currently hiring in {state} for {skill}
-can you tell me which companies are currently hiring in {city} for {skill}
-
-
-
-can you find me a job that uses {skill}
-can you find me a {skill} job
-tell me companies that are currently hiring for {skill}
-tell me companies that are currently hiring for {skill} in {state}
-tell me companies that are currently hiring for {skill} in {city}
-tell me companies in {state} that are currently hiring for {skill}
-tell me companies in {city} that are currently hiring for {skill}
-can you tell me companies that are currently hiring for {skill}
-can you tell me companies that are currently hiring for {skill} in {state}
-can you tell me companies that are currently hiring for {skill} in {city}
-can you tell me companies in {state} that are currently hiring for {skill}
-can you tell me companies in {city} that are currently hiring for {skill}
-list the companies that are currently hiring for {skill}
-list the companies that are currently hiring for {skill} in {state}
-list the companies that are currently hiring for {skill} in {city}
-list the companies in {state} that are currently hiring for {skill}
-list the companies in {city} that are currently hiring for {skill}
-where can I work with my skill in {skill}
-where can I work in {state} with my skill in {skill}
-where can I work in {city} with my skill in {skill}
-where can I get a job in {skill}
+GetCityIntent My zip code is {city}
+GetStateIntent My state is {state}
+GetSkillIntent One of my skills are {skill}
+GetSkillIntent Another skill I have is {skill}
+GetStateIntent I live in {state}
+GetCityIntent I live in {city}
+GetStateIntent I am moving to {state} tell me who is hiring
+GetStateIntent I am moving to {state} who is hiring there
+GetCityIntent I am moving to {city} tell me who is hiring
+GetCityIntent I am moving to {city} who is hiring there
+GetStateIntent I am moving to {state} tell me who is hiring for {skill}
+GetStateIntent I am moving to {state} who is hiring there for {skill}
+GetCityIntent I am moving to {city} tell me who is hiring for {skill}
+GetCityIntent I am moving to {city} who is hiring there for {skill}
+GetStateIntent I reside in {state}
+GetCityIntent I reside in {city}
+GetSkillIntent I am good in {skill}
+GetSkillIntent I am good at {skill}
+GetSkillIntent I am proficient in {skill}
+GetSkillIntent I am okay in {skill}
+GetSkillIntent I am okay at {skill}
+GetStateIntent I currently live in {state}
+GetCityIntent I currently live in {city}
+GetCityIntent Around {city}
+GetStateIntent Around {state}
